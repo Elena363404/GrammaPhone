@@ -1,11 +1,11 @@
--- Пользователи
+-- РџРѕР»СЊР·РѕРІР°С‚РµР»Рё
 CREATE TABLE msg.sys_user (
     user_id bigserial primary key,
     user_login varchar(100) NOT NULL,
     user_pass varchar(100) NOT NULL
 );
 
--- Сообщения
+-- РЎРѕРѕР±С‰РµРЅРёСЏ
 CREATE TABLE msg.message (
     msg_id bigserial primary key,
     to_id integer,
@@ -16,7 +16,7 @@ CREATE TABLE msg.message (
 );
 
 
--- Текст сообщения
+-- РўРµРєСЃС‚ СЃРѕРѕР±С‰РµРЅРёСЏ
 CREATE TABLE msg.content (
     content_id bigserial primary key,
     content text
